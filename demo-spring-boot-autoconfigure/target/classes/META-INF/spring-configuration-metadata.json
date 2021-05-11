@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "org.example",
+      "type": "org.example.SamplesProperties",
+      "sourceType": "org.example.SamplesProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "org.example.ip",
+      "type": "java.lang.String",
+      "sourceType": "org.example.SamplesProperties"
+    },
+    {
+      "name": "org.example.name",
+      "type": "java.lang.String",
+      "sourceType": "org.example.SamplesProperties"
+    }
+  ],
+  "hints": []
+}
