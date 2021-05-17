@@ -1,0 +1,9 @@
+server:
+  port: 18082
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: registry.gamma.t.ziroom.com
+  application:
+    name: server-samples

@@ -1,0 +1,15 @@
+
+spring:
+  application:
+   name: consumer-samples
+  cloud:
+    nacos:
+      discovery:
+        server-addr: registry.gamma.t.ziroom.com
+server:
+  port: 8087
+
+
+server-samples:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule
