@@ -10,8 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Hello world!
@@ -28,6 +30,8 @@ public class ManualWeightApplication {
         NamingService naming = null;
         NacosNamingMaintainService maintainService=null;
         public WeightController() throws NacosException {
+            new HashMap<>();
+            new ConcurrentHashMap<>();
             Properties props = new Properties();
             props.put("serverAddr","registry.gamma.t.ziroom.com");
             props.put("namespace","public");
