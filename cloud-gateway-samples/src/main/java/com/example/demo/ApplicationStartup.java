@@ -6,7 +6,6 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.cloud.gateway.event.RefreshRoutesEvent;
 import org.springframework.cloud.gateway.filter.FilterDefinition;
 import org.springframework.cloud.gateway.handler.predicate.PredicateDefinition;
-import org.springframework.cloud.gateway.route.InMemoryRouteDefinitionRepository;
 import org.springframework.cloud.gateway.route.RouteDefinition;
 import org.springframework.cloud.gateway.route.RouteDefinitionWriter;
 import org.springframework.context.ApplicationEventPublisher;
@@ -15,9 +14,7 @@ import reactor.core.publisher.Mono;
 
 import java.net.URI;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 
 @Component
@@ -34,7 +31,7 @@ public class ApplicationStartup implements ApplicationRunner {
         // 加载路由
         RouteDefinition definition = new RouteDefinition();
         definition.setId("aaa");
-        definition.setUri(new URI("http://www.ziroom.com"));
+        definition.setUri(new URI("http://www.ziroom.com/"));
 
         List<PredicateDefinition> predicateDefinitions = new ArrayList<>();
         PredicateDefinition predicateDefinition = new PredicateDefinition();
