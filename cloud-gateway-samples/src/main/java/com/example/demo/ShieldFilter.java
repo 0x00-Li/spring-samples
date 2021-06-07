@@ -7,7 +7,7 @@ import org.springframework.core.Ordered;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
-@Component
+//@Component
 public class ShieldFilter implements GlobalFilter, Ordered {
     public ShieldFilter(){
         System.out.println("start shield");
